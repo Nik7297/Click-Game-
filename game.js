@@ -1,5 +1,5 @@
 let viewportDiv =document.querySelector(".viweport")
-let imgboxes =document.querySelector(".imgboxes")
+// let imgboxes =document.querySelector(".imgboxes")
 let header = document.querySelector(".header")
 let start_button = document.querySelector(".start_button")
 let btn = document.querySelector("button")
@@ -17,17 +17,19 @@ let  third_img= document.querySelector(".third_img")
 
 
 btn.onclick=()=>{
-    select_img.style.display="block"
     start_button.style.display="none"
+    select_img.style.display="block"
     let counter=1;
     let count_scor=1;
     let a=viewportDiv.clientHeight
     let b=viewportDiv.clientWidth
+
+    
     for(let i=0;i<pic.length;i++){
       
     pic[i].onclick=()=>{
        
-            console.log("asfajsjnxdncfbnasnndnsamndxmsZN")
+            
         select_img.style.display="none"
         header.style.display="block"
             setInterval(()=>{
@@ -64,7 +66,7 @@ btn.onclick=()=>{
 
     }
 }else{
-    alert("Time Out....\n"+"Your Score ..."+(count_scor-1))
+    alert("Time Out....⏱\n"+"Your Score is..."+(count_scor-1))
     
 }
 
@@ -238,3 +240,5 @@ btn.onclick=()=>{
 //    }, 500);
   
 // }
+
+
