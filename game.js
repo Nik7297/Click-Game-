@@ -37,11 +37,12 @@ btn.onclick=()=>{
             time_number.innerHTML=counter++;
             },1000);
             
-             
+            
                 setInterval(()=>{
                     if(counter<=30){
-            let h=Math.random()*(a)
-            let j=Math.random()*(b)
+            let h=Math.random()*(a-100)
+            let j=Math.random()*(b-100)
+            
             let imz = document.createElement("img")
             if(i==0){
                 imz.setAttribute("src","https://freepngimg.com/thumb/bart_simpson/3-2-bart-simpson-picture-thumb.png")
@@ -54,7 +55,7 @@ btn.onclick=()=>{
             }
             
     
-    imz.setAttribute("onclick","imgclick(this)")
+    // imz.setAttribute("onclick","imgclick(this)")
     imz.classList.add("autocreatimg")
     viewportDiv.appendChild(imz)
     imz.style.top=h+'px'
